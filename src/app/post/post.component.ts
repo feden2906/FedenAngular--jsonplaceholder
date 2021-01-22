@@ -26,6 +26,9 @@ export class PostComponent implements OnInit {
   getBodyFromChosenPost(post: Post): void {
     this.bubbleUp.emit(post);
   }
-  // closePost()
+
+  closePost(): void {
+    // this.bubbleUp.emit();
+  }
 
 }

@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component';
 import { PostsComponent } from './posts/posts.component';
 import { ChosenPostComponent } from './chosen-post/chosen-post.component';
 import { HeaderComponent } from './header/header.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     PostComponent,
     PostsComponent,
     ChosenPostComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

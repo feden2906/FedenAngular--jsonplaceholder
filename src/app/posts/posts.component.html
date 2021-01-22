@@ -1,7 +1,7 @@
 
 
 
-
+<app-loading *ngIf="!posts"></app-loading>
   <app-chosen-post *ngIf="chosenPost" [post]="chosenPost"></app-chosen-post>
 <div class="postsWrapper">
   <app-post *ngFor="let p of posts" [post]="p" [chosenPost]="chosenPost" (bubbleUp)="getBubble($event)"></app-post>
