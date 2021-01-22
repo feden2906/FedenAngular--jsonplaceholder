@@ -1,0 +1,25 @@
+.postWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 15px;
+}
+.postWrapper:hover {
+  background-color: #bf88bf;
+  cursor: default;
+}
+.postWrapper>button:hover {
+  cursor: pointer;
+}
+
+.btnShow {
+  min-width: 130px;
+  height: 30px;
+  background-color: #629f62;
+}
+.btnClose {
+  min-width: 130px;
+  height: 30px;
+  background-color: indianred;
+}
