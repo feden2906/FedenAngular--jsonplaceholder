@@ -1,0 +1,26 @@
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #4c4c4c;
+}
+
+.navBar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navBar > p {
+  margin: 0 15px;
+  font-size: 22px;
+  color: plum;
+}
+
+.navBar > p:hover {
+  cursor: pointer;
+  color: #bf88bf;
+}
+.headerWrapper>div>i {
+  font-size: 25px;
+}
