@@ -17,9 +17,11 @@ export class PostComponent implements OnInit {
   @Output()
   bubbleUp = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+  }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
 
   getBodyFromChosenPost(post: Post): void {
     this.bubbleUp.emit(post);

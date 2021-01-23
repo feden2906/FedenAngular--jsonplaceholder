@@ -13,11 +13,13 @@ export class ChosenUserComponent implements OnInit {
   chosenId: number;
   chosenUser: User;
 
-  constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
+  constructor(private activatedRoute: ActivatedRoute, private userService: UserService) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(value => this.chosenId = +value);
   }
-    // this.chosenId ? this.userService.getUserById(this.chosenId).subscribe(value => this.chosenUser = value) : this.chosenUser = null;
+
+  // this.chosenId ? this.userService.getUserById(this.chosenId).subscribe(value => this.chosenUser = value) : this.chosenUser = null;
 
 }
