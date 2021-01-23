@@ -1,15 +1,9 @@
-
-
-
-
-
-
 <div class="postWrapper">
   {{post.id}}. {{post.title}}
   <button (click)="getBodyFromChosenPost(post)" *ngIf="!(chosenPost?.id===post.id)" class="btnShow">
     show post body
   </button>
-  <button (click)="closePost(post)" *ngIf="(chosenPost?.id===post.id)" class="btnClose">
+  <button (click)="closePost()" *ngIf="(chosenPost?.id===post.id)" class="btnClose">
     close post
   </button>
 </div>

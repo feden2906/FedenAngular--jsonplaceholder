@@ -1,4 +1,4 @@
-import {Component, Input, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Post} from '../../models/Post';
 
 
@@ -17,18 +17,16 @@ export class PostComponent implements OnInit {
   @Output()
   bubbleUp = new EventEmitter();
 
-  constructor() {
-  }
+  constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   getBodyFromChosenPost(post: Post): void {
     this.bubbleUp.emit(post);
   }
 
   closePost(): void {
-    // this.bubbleUp.emit();
+    this.bubbleUp.emit(null);
   }
 
 }

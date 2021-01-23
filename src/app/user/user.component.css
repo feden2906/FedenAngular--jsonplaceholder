@@ -1,0 +1,29 @@
+.userWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: plum;
+  border-radius: 7px;
+  margin: 2px 0;
+}
+
+.userFullBtn {
+  min-width: 140px;
+  height: 30px;
+  background-color: #629f62;
+}
+.userFullBtn:hover {
+  cursor: pointer;
+  background-color: forestgreen;
+}
+
+.userFullBtnRed {
+  min-width: 140px;
+  height: 30px;
+  background-color: indianred;
+}
+.userFullBtnRed:hover {
+  cursor: pointer;
+  background-color: #8b2222;
+}

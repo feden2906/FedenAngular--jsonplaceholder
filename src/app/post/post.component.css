@@ -9,17 +9,24 @@
   background-color: #bf88bf;
   cursor: default;
 }
-.postWrapper>button:hover {
-  cursor: pointer;
-}
+
 
 .btnShow {
   min-width: 130px;
   height: 30px;
   background-color: #629f62;
 }
+.btnShow:hover {
+  background-color: forestgreen;
+  cursor: pointer;
+}
+
 .btnClose {
   min-width: 130px;
   height: 30px;
   background-color: indianred;
+}
+.btnClose:hover {
+  background-color: #8b2222;
+  cursor: pointer;
 }

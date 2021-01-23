@@ -1,0 +1,16 @@
+<app-loading *ngIf="!users"></app-loading>
+<div class="AllUsersWrapper">
+
+  <div *ngIf="users" class="usersWrapper">
+    <app-user *ngFor="let user of users" [user]="user" (bubbleUp)="getChosenUser($event)" [chosenUser]="chosenUser"></app-user>
+  </div>
+
+
+
+
+  <div class="usersWrapper">
+    <router-outlet>
+
+    </router-outlet>
+  </div>
+</div>

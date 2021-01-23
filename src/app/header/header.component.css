@@ -14,16 +14,21 @@
   justify-content: flex-start;
 }
 
-.navBar > p {
+.navItem {
   margin: 0 15px;
   font-size: 22px;
+  text-decoration: none;
   color: plum;
 }
 
-.navBar > p:hover {
+.navItem:hover {
   cursor: pointer;
   color: #bf88bf;
 }
 .headerWrapper>div>i {
   font-size: 25px;
+}
+
+.active {
+  color: #8a5b8a;
 }

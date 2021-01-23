@@ -1,7 +1,11 @@
 <div class="headerWrapper">
   <div><i>MyLogo</i></div>
   <nav class="navBar">
-    <p *ngFor="let item of navItems" [routerLink]="[item.toLowerCase()]">{{item ? item : 'Home'}}</p>
+    <a class="navItem" [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a class="navItem" [routerLink]="['posts']" routerLinkActive="active">Posts</a>
+    <a class="navItem" [routerLink]="['comments']" routerLinkActive="active">Comments</a>
+    <a class="navItem" [routerLink]="['photos']" routerLinkActive="active">Photos</a>
+    <a class="navItem" [routerLink]="['users']" routerLinkActive="active">Users</a>
   </nav>
 </div>
 

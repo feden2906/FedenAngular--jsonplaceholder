@@ -1,0 +1,10 @@
+.AllUsersWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 5%;
+}
+
+.usersWrapper {
+  width: 40% ;
+}
+
