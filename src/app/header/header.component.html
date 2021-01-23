@@ -1,7 +1,11 @@
 <div class="headerWrapper">
   <div><i>MyLogo</i></div>
   <nav class="navBar">
-    <p *ngFor="let item of navItems" >{{item}}</p>
+    <p *ngFor="let item of navItems" [routerLink]="[item.toLowerCase()]">{{item ? item : 'Home'}}</p>
   </nav>
-
 </div>
+
+
+<router-outlet>
+
+</router-outlet>
