@@ -15,6 +15,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { CommentsComponent } from './comments/comments.component';
 import { UserComponent } from './user/user.component';
 import { ChosenUserComponent } from './chosen-user/chosen-user.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ChosenUserComponent } from './chosen-user/chosen-user.component';
     PhotosComponent,
     CommentsComponent,
     UserComponent,
-    ChosenUserComponent
+    ChosenUserComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { ChosenUserComponent } from './chosen-user/chosen-user.component';
       {path: 'users', component: UsersComponent, children: [
         {path: ':id', component: ChosenUserComponent}
       ]},
+      {path: '**', component: NotFoundComponent}
     ])
   ],
   providers: [],
