@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ChosenUserComponent implements OnInit {
 
-  // chosenId: number;
+  chosenId: number;
   chosenUser: User;
 
   constructor(
@@ -20,12 +20,9 @@ export class ChosenUserComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(value => {
-      // this.chosenId = +value;
-      this.userService.getUserById(+value).subscribe(user => this.chosenUser = user);
-  });
-
-
-}
-
-
+      this.chosenId = +value.id;
+      this.chosenUser = null;
+      this.userService.getUserById(this.chosenId).subscribe(user => this.chosenUser = user);
+    });
+  }
 }
