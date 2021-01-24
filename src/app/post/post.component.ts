@@ -17,6 +17,7 @@ export class PostComponent implements OnInit {
   @Output()
   bubbleUp = new EventEmitter();
 
+
   constructor() {
   }
 

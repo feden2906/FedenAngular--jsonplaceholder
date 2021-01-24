@@ -24,3 +24,20 @@
   cursor: pointer;
   background-color: #8b2222;
 }
+
+/*Button show posts from full user*/
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.userFullBtnGreen {
+  min-width: 140px;
+  height: 35px;
+  margin: 0 10px;
+  background-color: #629f62;
+}
+.userFullBtnGreen:hover {
+  cursor: pointer;
+  background-color: forestgreen;
+}

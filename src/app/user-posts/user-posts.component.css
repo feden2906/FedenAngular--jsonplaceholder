@@ -1,10 +1,9 @@
-.postTitle {
-  text-align: center;
-  margin: 15px 0;
-}
-
 .postsWrapper {
   width: 80%;
   margin: 10px auto;
   background-color: plum;
+}
+.userName {
+  text-align: center;
+  margin: 15px 0;
 }

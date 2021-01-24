@@ -13,10 +13,7 @@ export class ChosenUserComponent implements OnInit {
   chosenId: number;
   chosenUser: User;
 
-  constructor(
-    private activatedRoute: ActivatedRoute, private userService: UserService
-  ) {
-  }
+  constructor(private activatedRoute: ActivatedRoute, private userService: UserService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(value => {

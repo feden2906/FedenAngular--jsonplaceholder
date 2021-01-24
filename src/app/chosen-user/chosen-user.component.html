@@ -20,6 +20,7 @@
         <p class="ml20"><b>bs:</b> {{chosenUser.company.bs}}</p>
 
   <div class="btnWrapper">
+    <button [routerLink]="['','posts','userId',chosenUser.id]" class="userFullBtnGreen">show posts</button>
     <button [routerLink]="['','users']" class="userFullBtnRed">close</button>
   </div>
 

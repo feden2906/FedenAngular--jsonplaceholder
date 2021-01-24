@@ -16,6 +16,7 @@ import { CommentsComponent } from './comments/comments.component';
 import { UserComponent } from './user/user.component';
 import { ChosenUserComponent } from './chosen-user/chosen-user.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserPostsComponent } from './user-posts/user-posts.component';
 
 
 @NgModule({
@@ -32,14 +33,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
     CommentsComponent,
     UserComponent,
     ChosenUserComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserPostsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent},
+      {path: '',  component: HomeComponent},
       {path: 'posts', component: PostsComponent},
+      {path: 'posts/userId/:id', component: UserPostsComponent},
       {path: 'comments', component: CommentsComponent},
       {path: 'photos', component: PhotosComponent},
       {path: 'users', component: UsersComponent, children: [
