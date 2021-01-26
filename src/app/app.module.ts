@@ -3,20 +3,23 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import {PostComponent} from './post/post.component';
-import {PostsComponent} from './posts/posts.component';
-import {ChosenPostComponent} from './chosen-post/chosen-post.component';
-import {HeaderComponent} from './header/header.component';
-import {LoadingComponent} from './loading/loading.component';
-import {RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import { UsersComponent } from './users/users.component';
-import { PhotosComponent } from './photos/photos.component';
-import { CommentsComponent } from './comments/comments.component';
-import { UserComponent } from './user/user.component';
-import { ChosenUserComponent } from './chosen-user/chosen-user.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { UserPostsComponent } from './user-posts/user-posts.component';
+import {RouterModule, Routes} from '@angular/router';
+
+import {PostsComponent} from './components/posts/posts.component';
+import {PostComponent} from './components/post/post.component';
+import {ChosenPostComponent} from './components/chosen-post/chosen-post.component';
+import {HeaderComponent} from './components/header/header.component';
+import {LoadingComponent} from './components/loading/loading.component';
+import {HomeComponent} from './components/home/home.component';
+import {UsersComponent} from './components/users/users.component';
+import {PhotosComponent} from './components/photos/photos.component';
+import {CommentsComponent} from './components/comments/comments.component';
+import {UserComponent} from './components/user/user.component';
+import {ChosenUserComponent} from './components/chosen-user/chosen-user.component';
+import {NotFoundComponent} from './components/not-found/not-found.component';
+import {UserPostsComponent} from './components/user-posts/user-posts.component';
+import {routes} from './routes';
+
 
 
 @NgModule({
@@ -39,17 +42,7 @@ import { UserPostsComponent } from './user-posts/user-posts.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path: '',  component: HomeComponent},
-      {path: 'posts', component: PostsComponent},
-      {path: 'posts/userId/:id', component: UserPostsComponent},
-      {path: 'comments', component: CommentsComponent},
-      {path: 'photos', component: PhotosComponent},
-      {path: 'users', component: UsersComponent, children: [
-        {path: ':id', component: ChosenUserComponent}
-      ]},
-      {path: '**', component: NotFoundComponent}
-    ])
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
