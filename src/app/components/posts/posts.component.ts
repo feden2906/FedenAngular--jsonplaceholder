@@ -24,4 +24,9 @@ export class PostsComponent implements OnInit {
     this.chosenPost = post;
   }
 
+  closePost(): void {
+    // console.log(this.chosenPost);
+    this.chosenPost = null;
+  }
+
 }

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Post} from '../../models/post';
 
 @Component({
@@ -11,6 +11,9 @@ export class ChosenPostComponent implements OnInit {
   @Input()
   post: Post;
 
+  @Output()
+  bubbleUp = new EventEmitter();
+
   constructor() {
   }
 
@@ -18,6 +21,6 @@ export class ChosenPostComponent implements OnInit {
   }
 
   closePost(): void {
-    this.post = null;
+    this.bubbleUp.emit(null);
   }
 }

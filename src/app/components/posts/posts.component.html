@@ -1,7 +1,7 @@
 
 <h1 class="postTitle">All posts</h1>
 <app-loading *ngIf="!posts"></app-loading>
-  <app-chosen-post *ngIf="chosenPost" [post]="chosenPost"></app-chosen-post>
+  <app-chosen-post *ngIf="chosenPost" [post]="chosenPost" (bubbleUp)="closePost()"></app-chosen-post>
 <div class="postsWrapper">
   <app-post *ngFor="let p of posts" [post]="p" [chosenPost]="chosenPost" (bubbleUp)="getBubble($event)"></app-post>
 </div>
