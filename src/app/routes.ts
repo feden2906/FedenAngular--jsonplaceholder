@@ -13,7 +13,7 @@ import {UsersResolveService} from './services/resolve/users-resolve.service';
 
 export const routes: Routes = [
   {path: '',  component: HomeComponent},
-  {path: 'posts', component: PostsComponent},
+  {path: 'posts', component: PostsComponent },
   {path: 'posts/userId/:id', component: UserPostsComponent},
   {path: 'comments', component: CommentsComponent},
   {path: 'photos', component: PhotosComponent},

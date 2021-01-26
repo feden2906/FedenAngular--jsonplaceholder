@@ -14,13 +14,14 @@ export class ChosenPostComponent implements OnInit {
   @Output()
   bubbleUp = new EventEmitter();
 
-  constructor() {
-  }
 
   ngOnInit(): void {
+    console.log('this.post');
+    console.log(this.post);
   }
 
   closePost(): void {
-    this.bubbleUp.emit(null);
+    // this.post = null;
+     this.bubbleUp.emit(null);
   }
 }
