@@ -17,4 +17,7 @@ export class ChosenPostComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closePost(): void {
+    this.post = null;
+  }
 }

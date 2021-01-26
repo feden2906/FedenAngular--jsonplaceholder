@@ -7,6 +7,8 @@ import {UsersComponent} from './components/users/users.component';
 import {ChosenUserComponent} from './components/chosen-user/chosen-user.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
 import {Routes} from '@angular/router';
+import {UsersResolveService} from './services/resolve/users-resolve.service';
+
 
 
 export const routes: Routes = [
@@ -15,7 +17,7 @@ export const routes: Routes = [
   {path: 'posts/userId/:id', component: UserPostsComponent},
   {path: 'comments', component: CommentsComponent},
   {path: 'photos', component: PhotosComponent},
-  {path: 'users', component: UsersComponent, children: [
+  {path: 'users', component: UsersComponent, resolve: {usersData: UsersResolveService}, children: [
       {path: ':id', component: ChosenUserComponent}
     ]},
   {path: '**', component: NotFoundComponent}

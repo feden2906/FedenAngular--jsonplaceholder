@@ -4,40 +4,82 @@
   background-color: plum;
   padding: 20px 30px;
 }
+.chosenUserWrapper-2 {
+  width: 40%;
+  border-radius: 10px;
+  background-color: plum;
+  padding: 20px 30px ;
+}
 .center {text-align: center;}
 .ml20 {margin-left: 20px;}
 .ml40 {margin-left: 40px;}
 .mt10 {margin-top: 10px;}
 
-/*Button close full user*/
+.vvv {
+  width: 40%
+}
+
+.editUser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 75px 5% 138px;
+    width: 100%;
+    /*height: 100vh;*/
+    background-color: rgba(59, 59, 59, 0.5);
+}
+
+
+.labelEdit {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+.labelEdit>input {
+  width: 65%;
+  height: 21px;
+}
+
+
+
+/*Buttons*/
 .btnWrapper {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
+/*Button close full user*/
 .userFullBtnRed {
-  min-width: 140px;
+  min-width: 100px;
   height: 35px;
+  margin: 0 5px;
   background-color: indianred;
 }
 .userFullBtnRed:hover {
   cursor: pointer;
   background-color: #8b2222;
 }
-
 /*Button show posts from full user*/
-.btnWrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
 .userFullBtnGreen {
-  min-width: 140px;
+  min-width: 100px;
   height: 35px;
-  margin: 0 10px;
+  margin: 0 5px;
   background-color: #629f62;
 }
 .userFullBtnGreen:hover {
   cursor: pointer;
   background-color: forestgreen;
+}
+/*Button edit user info*/
+.userFullBtnEdit {
+  min-width: 100px;
+  height: 35px;
+  margin: 0 5px;
+  background-color: #9f9562;
+}
+.userFullBtnEdit:hover {
+  cursor: pointer;
+  background-color: #8b7a22;
 }

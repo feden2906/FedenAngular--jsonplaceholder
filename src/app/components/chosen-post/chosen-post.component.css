@@ -5,3 +5,13 @@
   padding: 17px 25px;
   margin: 10px auto 0;
 }
+.btnClose {
+  min-width: 130px;
+  height: 30px;
+  margin-top: 15px;
+  background-color: indianred;
+}
+.btnClose:hover {
+  background-color: #8b2222;
+  cursor: pointer;
+}
