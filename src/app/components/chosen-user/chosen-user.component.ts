@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import {User} from '../../models/user';
 import {UserService} from '../../services/user.service';
-import {ActivatedRoute} from '@angular/router';
+
 
 @Component({
   selector: 'app-chosen-user',
